@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Registration</title>
+        <link rel="stylesheet" href="form1.css">
+    </head>
+    <body>
+       <form name="form1" action="connect.php" method="POST">
+        <img src="logo.jpeg" alt="Omkar Bird Proofing" width="150" height="150" class="logo">
+        <h2>Registration</h2>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required placeholder="Enter your Name" pattern="[A-Za-z\s]+"><br><br>
+        <label for="email">EmailId: </label>
+        <input type="text" id="email" name="email" required placeholder="Enter your Email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><br><br>
+        <label for="contact">Contact: </label>
+        <input type="text" id="contact" name="contact" maxlength="10" placeholder="Enter a 10 digit number" pattern="\d{10}" required><br><br>
+        <label for="address">Address: </label>
+        <textarea id="address" name="address" required placeholder="Enter your Address" rows="3" class="textarea"></textarea><br><br>
+        <label for="pincode">Pincode: </label>
+        <input type="text" id="pincode" name="pincode" required placeholder="Enter Pincode" maxlength="6" pattern="\d{6}"><br><br>
+        <label for="date">Date: </label>
+        <input type="date" id="date" name="date" required><br><br>
+        <button type="submit" class="button">Submit</button>
+       </form>
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.forms['form1'];
+    
+    
+                // Collect and validate input values
+                const name = form.name.value.trim();
+                const email = form.email.value.trim();
+                const contact = form.contact.value.trim();
+                const address = form.address.value.trim();
+                const pincode = form.pincode.value.trim();
+                const date = form.date.value;
+    
+                if (!name || !email || !contact || !address || !pincode || !date) {
+                    alert("All fields are required!");
+                    return;
+                }
+    
+                // Basic regex validations
+                const namePattern = /^[A-Za-z\s]+/; 
+                const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                const contactPattern = /^\d{10}$/;
+                const pincodePattern = /^\d{6}$/;
+
+                if(!namePattern.test(name)) {
+                    alert("Please enter a valid name.");
+                    return;
+                }
+    
+                if (!emailPattern.test(email)) {
+                    alert("Please enter a valid email address.");
+                    return;
+                }
+
+                if (!contactPattern.test(contact)) {
+                alert("Please enter a valid 10-digit contact number.");
+                return;
+                }
+
+                if (!pincodePattern.test(pincode)) {
+                alert("Please enter a valid 6-digit pincode.");
+                return;
+                }
+
+            // If everything is valid, display a success message
+            alert("Form submitted successfully!");
+            });
+        });
+        </script>
+
+    
+    </body>
+</html>

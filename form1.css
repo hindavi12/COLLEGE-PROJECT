@@ -1,0 +1,47 @@
+
+body{
+    font-family: "Rubik", sans-serif;
+    font-size: small;
+    text-align: center;
+    line-height: 2;
+    font-weight: 100;
+    color: #555;
+    margin: 50px;
+    justify-items: center;
+    background-color: #e6cea0;
+}
+form{
+    text-align: center;
+    padding: 50px;
+    border: 1px solid grey;
+    max-width: 500px;
+    background-color: white;
+}
+h2{
+    font-family: "Rubik", sans-serif;
+    text-decoration: underline;
+}
+.button{
+    background-color: #57b9ff;
+    color: white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #02075d ;
+    transition: all 0.5s;
+}
+.logo{
+    display: block;
+    width: 100%;
+}
+.textarea{
+    border: 1px solid #555;
+}
+
+

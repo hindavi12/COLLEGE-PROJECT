@@ -1,0 +1,58 @@
+body{
+    font-family: "Rubik", sans-serif;
+    font-size: small;
+    text-align: center;
+    line-height: 2;
+    font-weight: 100;
+    color: #555;
+    margin: 50px;
+    margin-top: 8%;
+    justify-items: center;
+    background-color: #e6cea0;
+}
+form{
+    text-align: center;
+    padding: 50px;
+    border: 1px solid grey;
+    max-width: 500px;
+    background-color: white;
+}
+h1{
+    font-family: "Rubik", sans-serif;
+    text-decoration: underline;
+}
+.logo{
+    display: block;
+    width: 100%;
+}
+.login-btn{
+    background-color: #57b9ff;
+    color: white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.login-btn:hover{
+    background-color: #02075d ;
+    transition: all 0.5s;
+}
+.cancel-btn{
+    background-color: rgb(246, 123, 123);
+    color: white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.cancel-btn:hover{
+    background-color: rgb(129, 3, 3);
+    transition: all 0.5s;
+}
+
