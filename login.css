@@ -1,30 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    font-family: "Rubik", sans-serif;
-    font-size: small;
+    font-family: 'Californian FB';
+    font-size: 25px;
     text-align: center;
-    line-height: 2;
     font-weight: 100;
     color: #555;
-    margin: 50px;
-    margin-top: 8%;
+    /*margin: 50px;*/
+    /*margin-top: 8%;*/
     justify-items: center;
-    background-color: #e6cea0;
+    background-image: url(bluebg.jpg);
+    /*background-color: #e6cea0;*/
 }
 form{
     text-align: center;
-    padding: 50px;
-    border: 1px solid grey;
-    max-width: 500px;
-    background-color: white;
+    /*padding: 50px;*/
+    border: 0px solid gray;
+    /*max-width: 500px;*/
+    /*background-color: white;*/
 }
 h1{
-    font-family: "Rubik", sans-serif;
+    font-family: 'Californian FB';
     text-decoration: underline;
+    font-size: 50px;
 }
-.logo{
+/*.logo{
     display: block;
     width: 100%;
-}
+}*/
 .login-btn{
     background-color: #57b9ff;
     color: white;
@@ -55,4 +61,22 @@ h1{
     background-color: rgb(129, 3, 3);
     transition: all 0.5s;
 }
-
+.container{
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    align-items: center;
+}
+.logo1{
+    height: 725px;
+    width: 800px;
+}
+input{
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 0px solid black;
+    border-radius: 2px;
+    box-shadow: 0 0 10px white;
+    margin: 10px;
+}

@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.6rem;
+    position: relative;
+    padding: 0 2.2rem;
+    /*background-image: url("bluebg.jpg");*/
+}
+nav{
+    display: block;
+    unicode-bidi: isolate;
+}
+.header-icon-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 3.2rem;
+}
+.icon{
+    display: inline-block;
+    height: 1.5rem;
+}
+.logo{
+    height: 5.2rem;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    border: 0px solid black;
+    box-shadow: 0px 10px 10px rgba(192, 178, 178, 0.833);
+    border-radius: px;
+    min-width: 150px;
+    z-index: 1000;
+}
+.dropdown ul{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+.dropdown ul li{
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+.dropdown ul li:hover{
+    background: #f0f0f0;
+}
+.header-icon-list li:hover .dropdown{
+    display: block;
+}
+body{
+    font-family: 'Californian FB';
+    /*background-image: url("bluebg.jpg");*/
+}
+h2{
+    padding: 0 2.2rem;
+}
+.dash{
+    display: flex;
+    align-items: center;
+    border: 0px solid black;
+    box-shadow: 0px 10px 10px rgba(192, 178, 178, 0.833);
+    border-radius: 1px;
+}
+@media(max-width: 75rem){
+    .grid{
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+}
+.container{
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: auto;
+}
+.grid{
+    display: grid;
+}
+.grid--3--cols{
+    margin-top: 3.2rem;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.2rem;
+    row-gap: 2.3rem; 
+}
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
+.data{
+    box-shadow: 0 3.4rem 5.2rem rgba(0, 0, 0, 0.075);
+    border-radius: 2px;
+    justify-items: center;
+    background-color: white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 0.5s ease, transform 1s linear;
+} 
+.data:hover{
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+.data-title{
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 600;
+}
+.data-icon{
+    height: 6rem;
+    width: 4rem;
+}
+.contact{
+    padding: 0 3.2rem;
+    margin-top: 3rem;
+}
+.btn-contact{
+    background-color: rgba(179, 162, 162, 0.758);
+    color: black;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+.btn-contact:hover{
+    background-color: rgba(116, 113, 113, 0.858) ;
+    transition: all 0.5s;
+}

@@ -1,4 +1,8 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: "Rubik", sans-serif;
     font-size: small;
@@ -8,12 +12,14 @@ body{
     color: #555;
     margin: 50px;
     justify-items: center;
-    background-color: #e6cea0;
+   /* background-color: #e6cea0;*/
+   background-image: url(bluebg.jpg);
 }
 form{
     text-align: center;
-    padding: 50px;
-    border: 1px solid grey;
+    padding: 20px;
+    border: 0px solid grey;
+    box-shadow: 0 10px 10px white;
     max-width: 500px;
     background-color: white;
 }
@@ -43,5 +49,4 @@ h2{
 .textarea{
     border: 1px solid #555;
 }
-
 

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            height: 50px;
+        }
+         
+         .header .title {
+           
+             margin-left: 20px;
+            
+             font-size: 24px;
+           
+             font-weight: bold;
+            
+             color: #333;
+        
+       }
+        .container {
+            max-width: 120rem;
+            padding: 0 3.2rem;
+            margin: auto;
+        }
+        .grid{
+            display: grid;
+        }
+
+        .grid-item {
+            margin-top: 3.2rem;
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 3.2rem;
+            row-gap: 2.3rem; 
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .grid-item h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .grid-item .link {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .grid-item .link:hover {
+            background-color: #0056b3;
+        }
+
+        .grid-item .read-more {
+            font-size: 14px;
+            color: #007bff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .grid-item .read-more:hover {
+            text-decoration: underline;
+        }
+        .data{
+            box-shadow: 0 3.4rem 5.2rem rgba(0, 0, 0, 0.075);
+            border-radius: 2px;
+            justify-items: center;
+            background-color: white;
+            overflow: hidden;
+            cursor: pointer;
+            transition: opacity 0.5s ease, transform 1s linear;
+        }
+        .data:hover{
+            opacity: 0.5;
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpeg" alt="Omkar Bird Proofing Logo">
+        <div class="title"><h2>OUR PROFESSIONAL SERVICES</h2></div>
+    </div>
+    <div class="container">
+        <div class="grid">
+        <div class="grid-item">
+        <div class="item">
+            <div class="data">
+                <img src="img1.jpg" alt="Residential and Commercial Nets">
+                <h2>Residential and Commercial Nets</h2>
+            </div>
+                <a href="#" class="link">Place Order</a>
+                <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="item">
+            <div class="data">
+                <img src="img2.jpg" alt="Bird Spikes">
+                <h2>Bird Spikes</h2>
+            </div>
+                <a href="#" class="link">Place Order</a>
+                <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="item">
+            <div class="data">
+                <img src="img3.jpg" alt="Bird Net for Industrial Purpose">
+                <h2>Bird Net for Industrial Purpose</h2>
+            </div>
+                <a href="#" class="link">Place Order</a>
+                <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="item">
+            <div class="data">
+                <img src="img4.jpg" alt="Bird Net For Swimming Pool">
+                <h2>Bird Net For Swimming Pool</h2>
+            </div>
+                <a href="#" class="link">Place Order</a>
+                <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="item">
+            <div class="data">
+                <img src="img5.jpg" alt="Pleated Mosquito Net">
+                <h2>Pleated Mosquito Net</h2>
+            </div>
+                <a href="#" class="link">Place Order</a>
+                <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="item">
+            <div class="data">
+                <img src="img6.jpg" alt="Car Parking Net">
+                <h2>Car Parking Net</h2>
+            </div>
+                <a href="#" class="link">Place Order</a>
+                <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="item">
+            <div class="data">
+                <img src="imgs.webp" alt="Sports Net">
+                <h2>Sports Net</h2>
+            </div>
+                <a href="#" class="link">Place Order</a>
+                <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="item">
+            <div class="data">
+                <img src="pc.jpg" alt="Pest Control Services">
+                <h2>Pest Control Services</h2>
+            </div>
+                <a href="#" class="link">Place Order</a>
+                <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
